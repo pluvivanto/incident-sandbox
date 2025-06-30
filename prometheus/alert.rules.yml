@@ -1,0 +1,11 @@
+groups:
+  - name: cpu-alerts
+    rules:
+      - alert: HighCpuUsage
+        expr: rate(node_cpu_seconds_total{mode="user"}[1m]) > 0.1
+        for: 10s
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected on {{ $labels.instance }}"
+          description: "User-mode CPU usage > 10% for more than 10 seconds."

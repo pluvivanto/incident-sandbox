@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+.env
+grafana-data/
+uv.lock
+alertmanager/alertmanager.yml
