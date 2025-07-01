@@ -23,7 +23,7 @@ This project is not intended for production use.
 - Prometheus
 - Node Exporter
 - Alertmanager
-- Grafana (optional; dashboard not yet included)
+- Grafana (preloaded with the official Node Exporter Full dashboard [ID: 1860](https://grafana.com/grafana/dashboards/1860-node-exporter-full/))
 - Slack (incoming webhook for alert delivery)
 
 ## License
